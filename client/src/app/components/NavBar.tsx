@@ -1,13 +1,5 @@
 import { Button } from "@mui/material";
-
-const buttons = [
-  "Приветствие",
-  "Хронология",
-  "Портфолио",
-  "Инструменты",
-  "Отзывы",
-  "Контакты",
-];
+import { navBarButtons } from "../constants/contant";
 
 const NavBar = () => {
   return (
@@ -25,14 +17,15 @@ const NavBar = () => {
     border-l-2 
     border-l-white 
     p-4
+    justify-start
     "
     >
-      {buttons.map((button) => (
+      {navBarButtons.map((button) => (
         <Button
           key={button}
           variant="text"
           href={`#${button}`}
-          className=" text-white p-0 hover:text-red-400 hover:bg-transparent"
+          className="normal-case text-white p-0 hover:text-red-400 hover:bg-transparent  min-w-0 font-sans text-lg"
         >
           {button}
         </Button>

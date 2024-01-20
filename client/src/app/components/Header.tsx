@@ -1,12 +1,15 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.png";
-import { icons } from "../constant/icons";
+import { icons } from "../constants/icons";
 
 const Header = () => {
   return (
     <header className="gap-10 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <div className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-4 md:py-4">
-        <h1 className="font-bold text-2xl sm:text-4xl text-center md:text-left">
+        <h1
+          className="font-bold text-2xl sm:text-4xl text-center md:text-left"
+          id="Приветствие"
+        >
           Галемов Иван
         </h1>
         <p className="text-xs sm:text-base text-center md:text-left">
