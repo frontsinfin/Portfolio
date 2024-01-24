@@ -6,18 +6,16 @@ const NavBar = () => {
     <div
       className="
     items-start
-    fixed
+    sticky
+    top-[20px]
     hidden 
-    right-[5%]
-    xl:right-[15%]
-    2xl:right-[23%]
     md:flex 
+    h-[200px]
     flex-col 
     border-solid 
     border-l-2 
     border-l-white 
     p-4
-    justify-start
     "
     >
       {navBarButtons.map((button) => (
