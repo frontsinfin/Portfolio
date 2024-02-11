@@ -1,7 +1,7 @@
 export const chronologyCards = [
   {
     id: 1,
-    data: ["март", 2023],
+    data: "март 2023",
     title: "Знакомство с web-сферой",
     typeWork: "Личная/учебная деятельность",
     tags: [
@@ -18,7 +18,7 @@ export const chronologyCards = [
   },
   {
     id: 2,
-    data: ["июнь", 2023],
+    data: "март 2023",
     title: "Первый проект",
     typeWork: "Личная/учебная деятельность",
     tags: ["SASS", "БЭМ", "Адаптивная верстка"],
@@ -27,7 +27,7 @@ export const chronologyCards = [
   },
   {
     id: 3,
-    data: ["июнь", 2023],
+    data: "март 2023",
     title: "Первый проект",
     typeWork: "Личная/учебная деятельность",
     tags: ["SASS", "БЭМ", "Адаптивная верстка"],
@@ -36,7 +36,7 @@ export const chronologyCards = [
   },
   {
     id: 4,
-    data: ["август", 2023],
+    data: "март 2023",
     title: "Первый проект",
     typeWork: "Личная/учебная деятельность",
     tags: ["SASS", "БЭМ", "Адаптивная верстка"],
@@ -45,7 +45,7 @@ export const chronologyCards = [
   },
   {
     id: 5,
-    data: ["сентябрь", 2023],
+    data: "март 2023",
     title: "Первый проект",
     typeWork: "Личная/учебная деятельность",
     tags: ["SASS", "БЭМ", "Адаптивная верстка"],

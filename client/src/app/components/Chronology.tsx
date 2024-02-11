@@ -3,18 +3,16 @@ import TitleComp from "./TitleComp";
 
 const Chronology = () => {
   return (
-    <div className="flex flex-col gap-4 md:gap-6">
+    <div className="flex flex-col gap-4 md:gap-10">
       <TitleComp title="Хронология" titleId="Хронология" />
       <div className="flex flex-col gap-4">
         {chronologyCards.map((card) => (
           <div className="flex" key={card.id}>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mr- md:mr-6">
               <div className="flex flex-col items-center my-[6px] gap-2">
-                <div className=" rounded-full bg-red-400 w-4 h-4 mx-6 md:mx-12 "></div>
+                <div className=" rounded-full bg-red-400 w-5 h-5 "></div>
                 <div className="flex flex-col items-center text-[10px] md:text-xs font-light">
-                  {card.data.map((item) => (
-                    <div>{item}</div>
-                  ))}
+                  {card.data}
                 </div>
               </div>
               <div className="border-r-2 h-[100%]"></div>

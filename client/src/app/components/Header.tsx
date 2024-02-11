@@ -6,7 +6,7 @@ import TitleComp from "./TitleComp";
 const Header = () => {
   return (
     <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
-      <div className="md:w-[70%] col-span-2 flex flex-col gap-4 md:gap-6 md:py-4">
+      <div className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
         <TitleComp title="Галемов Иван" titleId="Приветствие" />
         <p className="text-[14px] md:text-base text-center md:text-left">
           Я web-разработчик из Санкт-Петербурга. На данном этапе жизни...

@@ -19,3 +19,18 @@
 html {
   scroll-behavior: smooth;
 }
+.rec.rec-arrow {
+  background-color: transparent;
+  box-shadow: none;
+  color: rgb(221, 221, 221);
+}
+.rec.rec-arrow:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+}
+.rec.rec-arrow:hover {
+  background-color: none;
+  box-shadow: none;
+  color: white;
+}
