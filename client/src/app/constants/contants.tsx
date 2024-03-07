@@ -62,3 +62,7 @@ export const navBarButtons = [
   "Отзывы",
   "Контакты",
 ];
+
+import testHub from "../../../public/potrfolio/testHub.jpg";
+
+export const portfolioImages = [testHub, testHub, testHub, testHub, testHub];

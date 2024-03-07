@@ -1,14 +1,15 @@
-import { chronologyCards } from "../constants/contant";
+import { chronologyCards } from "../constants/contants";
 import TitleComp from "./TitleComp";
 
 const Chronology = () => {
   return (
     <div className="flex flex-col gap-4 md:gap-10">
       <TitleComp title="Хронология" titleId="Хронология" />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 items-start">
         {chronologyCards.map((card) => (
-          <div className="flex" key={card.id}>
-            <div className="flex flex-col items-center mr- md:mr-6">
+          <div className="grid grid-flow-col" key={card.id}>
+            {/* дата хронологии */}
+            <div className="col-span-1 flex flex-col items-center mr-2 md:mr-6">
               <div className="flex flex-col items-center my-[6px] gap-2">
                 <div className=" rounded-full bg-red-400 w-5 h-5 "></div>
                 <div className="flex flex-col items-center text-[10px] md:text-xs font-light">
@@ -17,7 +18,11 @@ const Chronology = () => {
               </div>
               <div className="border-r-2 h-[100%]"></div>
             </div>
-            <section className="flex gap-2 md:gap-3 flex-col" id="tut">
+            {/* контент */}
+            <section
+              className="col-span-1 flex gap-2 md:gap-3 flex-col"
+              id="tut"
+            >
               <div>
                 <h2 className="text-base md:text-2xl font-bold leading-none">
                   {card.title}

@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { navBarButtons } from "../constants/contant";
+import { navBarButtons } from "../constants/contants";
 
 const NavBar = () => {
   return (
