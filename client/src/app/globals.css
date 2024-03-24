@@ -16,6 +16,32 @@
   }
 }
 
-html {
+* {
   scroll-behavior: smooth;
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #03020000;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 100vh;
+    border: 5px solid #0d0000;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0c0c0;
+  }
+}
+.last-child:last-child {
+  .line {
+    border: none;
+  }
 }

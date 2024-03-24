@@ -1,6 +1,6 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.jpg";
-import { icons } from "../constants/icons";
+import { social } from "../constants/icons";
 import TitleComp from "./TitleComp";
 
 const Header = () => {
@@ -15,8 +15,8 @@ const Header = () => {
           и повысить свои навыки разработчика.
         </p>
         <div className="flex gap-2 justify-center md:justify-start">
-          {icons.map((icon) => (
-            <a>
+          {social.map((icon, idx) => (
+            <a key={idx}>
               <Image src={icon} alt={icon} />
             </a>
           ))}
