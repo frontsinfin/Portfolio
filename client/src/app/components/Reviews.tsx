@@ -12,8 +12,11 @@ const Reviews = () => {
         hideScrollbars={false}
         nativeMobileScroll
       >
-        {reviewsCards.map((card) => (
-          <div className="flex text-black snap-center gap-2 bg-white flex-col items-center p-4 md:p-6 rounded-md min-w-[240px] md:min-w-[280px]">
+        {reviewsCards.map((card, idx) => (
+          <div
+            className="flex text-black snap-center gap-2 bg-white flex-col items-center p-4 md:p-6 rounded-md min-w-[240px] md:min-w-[280px]"
+            key={idx}
+          >
             <Image
               className="w-[60px] md:w-[100px] h-[60px] md:h-[100px] rounded-full"
               src={card.avatar}
