@@ -22,7 +22,7 @@ const Header = () => {
           ))}
         </div>
       </div>
-      <div className=" flex items-center overflow-hidden w-[150px] h-[150px] md:h-[250px] md:w-[250px] rounded-full">
+      <div className=" flex items-center overflow-hidden w-[200px] h-[200px] md:min-h-[250px] md:min-w-[250px] lg:min-h-[300px] lg:min-w-[300px] rounded-full">
         <Image src={avatar} alt="avatar"></Image>
       </div>
     </header>

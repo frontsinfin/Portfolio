@@ -27,9 +27,11 @@ const Chronology = () => {
               id="tut"
             >
               <div>
-                <h2 className="text-base md:text-2xl font-bold leading-none">
+                {/* заголовок */}
+                <h2 className="text-lg md:text-2xl font-bold leading-none">
                   {card.title}
                 </h2>
+                {/* тип занятия */}
                 <h3 className="text-[10px] md:text-xs">#{card.typeWork}</h3>
               </div>
               {/* теги */}
