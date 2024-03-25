@@ -8,10 +8,10 @@ import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 sm:gap-10 md:gap-16 m-auto max-w-[1140px] px-4 md:px-6 py-8 md:py-16">
+    <main className="flex flex-col gap-12 sm:gap-16 md:gap-16 m-auto max-w-[1140px] px-4 md:px-6 py-20 md:py-16">
       <Header />
       <div className="flex gap-4 md:gap-8">
-        <div className="flex flex-col gap-12 md:gap-16 w-full md:w-[80%]">
+        <div className="flex flex-col gap-12 md:gap-16 w-full md:w-[75%] lg:w-[80%]">
           <Chronology />
           <Portfolio />
           <Tools />

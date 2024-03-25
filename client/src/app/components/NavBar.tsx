@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import Link from "next/link";
 import { navBarButtons } from "../constants/contants";
 
 const NavBar = () => {
@@ -20,14 +20,13 @@ const NavBar = () => {
     "
     >
       {navBarButtons.map((button) => (
-        <Button
+        <Link
           key={button}
-          variant="text"
           href={`#${button}`}
-          className="normal-case text-white p-0 hover:text-red-400 hover:bg-transparent  min-w-0 font-sans text-[16px] leading-[1.5]"
+          className="text-white hover:text-red-400 active:text-red-300 hover:bg-transparent  min-w-0 font-sans text-[18px] leading-[1.4] transition-colors"
         >
           {button}
-        </Button>
+        </Link>
       ))}
     </section>
   );

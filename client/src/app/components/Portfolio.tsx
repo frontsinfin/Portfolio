@@ -18,7 +18,7 @@ export default function Portfolio() {
               id={item.name}
               key={idx}
               alt={item.name}
-              className="rounded-lg p-1 w-[240px] md:w-[280px]"
+              className="rounded-lg  w-[240px] md:w-[280px]"
               src={item.img}
             />
           );
