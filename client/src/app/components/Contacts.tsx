@@ -67,9 +67,9 @@ const Contacts = () => {
           </div>
         </form>
         <div className=" flex flex-col gap-1 fixed bottom-10 right-10">
-          <span className="">{errors.name?.message}</span>
+          {/* <span className="">{errors.name?.message}</span>
           <span className="">{errors.email?.message}</span>
-          <span className="">{errors.quest?.message}</span>
+          <span className="">{errors.quest?.message}</span> */}
         </div>
       </section>
     </div>
