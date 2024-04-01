@@ -1,6 +1,6 @@
 interface TitleCompProps {
   title: string;
-  titleId: string;
+  titleId?: string;
 }
 
 const TitleComp: React.FC<TitleCompProps> = ({ title, titleId }) => {

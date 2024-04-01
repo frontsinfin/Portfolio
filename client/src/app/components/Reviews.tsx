@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TitleComp from "./TitleComp";
 import ScrollContainer from "react-indiana-drag-scroll";
-import { reviewsCards } from "../constants/contants";
+import { reviewsCards } from "../constants/constants";
 
 const Reviews = () => {
   return (

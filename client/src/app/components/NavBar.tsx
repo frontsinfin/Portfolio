@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navBarButtons } from "../constants/contants";
+import { navBarButtons } from "../constants/constants";
 
 const NavBar = () => {
   return (

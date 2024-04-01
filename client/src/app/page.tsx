@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Tools from "./components/Tools";
 import Reviews from "./components/Reviews";
+import Contacts from "./components/Contacts";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           <Portfolio />
           <Tools />
           <Reviews />
+          <Contacts />
         </div>
         <NavBar />
       </div>

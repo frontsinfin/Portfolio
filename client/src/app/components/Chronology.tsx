@@ -1,4 +1,4 @@
-import { chronologyCards } from "../constants/contants";
+import { chronologyCards } from "../constants/constants";
 import TitleComp from "./TitleComp";
 
 const Chronology = () => {

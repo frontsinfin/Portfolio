@@ -1,13 +1,13 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.jpg";
-import { social } from "../constants/icons";
+import { social } from "../constants/constants";
 import TitleComp from "./TitleComp";
 
 const Header = () => {
   return (
     <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <section className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
-        <TitleComp title="Галемов Иван" titleId="Приветствие" />
+        <TitleComp title="Галемов Иван" />
         <div className="flex flex-col gap-4">
           <p className="text-[14px] md:text-base text-center md:text-left">
             Я web-разработчик из Санкт-Петербурга. На данном этапе жизни...

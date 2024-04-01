@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ivan Galemov",
   description: "Portfolio",
+  icons: {
+    icon: ["/favicon.ico"],
+    shortcut: ["/apple-touch-icon.png"],
+    apple: ["/apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-white bg-[#0D0000]`}>
+      <body className={`${inter.className} text-white bg-[#302727]`}>
         {children}
       </body>
     </html>

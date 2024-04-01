@@ -1,6 +1,6 @@
 import Image from "next/image";
 import TitleComp from "./TitleComp";
-import { portfolioImages } from "../constants/contants";
+import { portfolioImages } from "../constants/constants";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Portfolio() {

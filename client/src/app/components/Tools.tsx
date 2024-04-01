@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { tools } from "../constants/icons";
+import { tools } from "../constants/constants";
 import TitleComp from "./TitleComp";
 
 const Tools = () => {
