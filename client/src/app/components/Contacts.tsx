@@ -5,72 +5,91 @@ import Link from "next/link";
 
 import React from "react";
 import { useForm } from "react-hook-form";
+import Input from "../UI/Input";
+
+const InputStyles =
+  "w-full bg-inherit text-sm md:text-[14px] px-4 md:px-6 py-1 text-white font-normal placeholder:text-[#787878] placeholder:font-normal transition-opacity hover:opacity-70  active:opacity-50 outline-none border-white border-[1px] rounded-[4px] px-4 w-full ";
 
 const Contacts = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {};
+  const { handleSubmit, control, register } = useForm();
+  const onSubmit = (data: {}) => {
+    console.log(data);
+  };
+
   return (
-    <div className="flex flex-col gap-4 md:gap-10">
+    <div className="flex flex-col gap-4 md:gap-10 md:max-w-max">
       <TitleComp title="Контакты" titleId="Контакты" />
-      <section className="flex gap-20">
-        <div className="flex flex-col gap-4 text-xl font-bold">
-          <h3>Соц.сети</h3>
-          <div className="flex flex-col gap-2">
-            {dataContacts.map((contact) => (
-              <Link
-                href={contact.link}
-                key={contact.social}
-                className="flex gap-2 items-center"
-              >
-                <Image
-                  width={24}
-                  height={24}
-                  alt={contact.social}
-                  src={contact.icon}
-                />
-                <span className="font-normal text-lg">{contact.social}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
+      <section className="flex flex-col md:flex-row gap-20">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-4 text-xl font-bold"
+          className="flex flex-col gap-5 md:gap-6 text-xl font-bold w-full"
         >
-          <h3>Написать мне</h3>
-          <div className="flex flex-col gap-2">
-            <input
-              type="text"
-              placeholder="name"
-              {...register("name", { required: "Укажите имя", min: 3 })}
+          <div className="flex flex-col md:flex-row l gap-5 md:gap-6">
+            <Input
+              InputStyles={InputStyles}
+              name="name"
+              placeholder="имя*"
+              control={control}
+              rules={{
+                required: "Укажите имя",
+                minLength: {
+                  value: 2,
+                  message: "Минимум 2 символа",
+                },
+              }}
             />
-            <input
-              type="text"
-              placeholder="email"
-              {...register("email", { required: "Укажите почту" })}
+            <Input
+              InputStyles={InputStyles}
+              name="email"
+              placeholder="почта*"
+              control={control}
+              rules={{
+                required: "Укажите почту",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Неверный формат почты",
+                },
+              }}
             />
-            <input
-              type="tel"
-              placeholder="number"
-              {...register("number", { maxLength: 11 })}
+            <Input
+              InputStyles={InputStyles}
+              name="number"
+              placeholder="телефон"
+              control={control}
             />
+          </div>
+          <textarea
+            className={InputStyles}
+            placeholder="ваш вопрос"
+            rows={3}
+            {...register("question")}
+          ></textarea>
+          <div className="flex gap-6 md:gap-8">
             <input
-              type="text"
-              placeholder="quest"
-              {...register("quest", { required: "Напишите письмо" })}
+              type="submit"
+              className={`${InputStyles} cursor-pointer max-w-min`}
             />
-            <input type="submit" className="text-start" />
+            <div className="flex gap-3 md:gap-4">
+              {dataContacts.map((contact) => (
+                <Link
+                  href={contact.link}
+                  key={contact.social}
+                  className="flex gap-2 items-center hover:opacity-70 active:opacity-50 transition-opacity"
+                >
+                  <Image
+                    width={20}
+                    height={20}
+                    alt={contact.social}
+                    src={contact.icon}
+                  />
+                  <span className="text-[12px] font-normal hidden : md:block">
+                    {contact.social}
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </form>
-        <div className=" flex flex-col gap-1 fixed bottom-10 right-10">
-          {/* <span className="">{errors.name?.message}</span>
-          <span className="">{errors.email?.message}</span>
-          <span className="">{errors.quest?.message}</span> */}
-        </div>
       </section>
     </div>
   );

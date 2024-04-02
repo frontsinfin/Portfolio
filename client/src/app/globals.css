@@ -45,9 +45,3 @@
     border: none;
   }
 }
-.hover-icon {
-  stroke: #240b0b !important;
-}
-.hover-icon:hover > svg > path {
-  stroke: #0d0000;
-}

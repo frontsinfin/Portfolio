@@ -8,6 +8,7 @@ import photoshop from "../../../public/icons/photoshop.svg";
 import trello from "../../../public/icons/trello.svg";
 import notion from "../../../public/icons/notion.svg";
 import vsCode from "../../../public/icons/vsCode.svg";
+import phone from "../../../public/icons/phone.svg";
 
 export const social = [telegram, github, instagram, twitter];
 export const tools = [
@@ -147,5 +148,5 @@ export const dataContacts = [
     icon: instagram,
     link: "https://instagram.com/snuysoviy_lis",
   },
-  { social: "8 915 647-74-38", icon: twitter, link: "https://" },
+  { social: "8 915 647-74-38", icon: phone, link: "#Контакты" },
 ];
