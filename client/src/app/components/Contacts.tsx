@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import Input from "../UI/Input";
 
 const InputStyles =
-  "w-full bg-inherit text-sm md:text-[14px] px-4 md:px-6 py-1 text-white font-normal placeholder:text-[#787878] placeholder:font-normal transition-opacity hover:opacity-70  active:opacity-50 outline-none border-white border-[1px] rounded-[4px] px-4 w-full ";
+  "w-full bg-inherit text-[12px] md:text-[14px] px-4 md:px-6 py-2 text-white font-normal placeholder:text-[#787878] placeholder:font-normal transition-opacity hover:opacity-70  active:opacity-50 outline-none border-white border-[1px] rounded-[4px] px-4 w-full ";
 
 const Contacts = () => {
   const { handleSubmit, control, register } = useForm();
