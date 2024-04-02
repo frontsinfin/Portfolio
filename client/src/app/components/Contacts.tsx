@@ -1,19 +1,21 @@
-import Image from "next/image";
+import React from "react";
 import { dataContacts } from "../constants/constants";
-import TitleComp from "./TitleComp";
+import { useForm } from "react-hook-form";
 import Link from "next/link";
 
-import React from "react";
-import { useForm } from "react-hook-form";
+import TitleComp from "./TitleComp";
 import Input from "../UI/Input";
+
+import Image from "next/image";
+import { sendContactForm } from "@/lib/api";
 
 const InputStyles =
   "w-full bg-inherit text-[12px] md:text-[14px] px-4 md:px-6 py-2 text-white font-normal placeholder:text-[#787878] placeholder:font-normal transition-opacity hover:opacity-70  active:opacity-50 outline-none border-white border-[1px] rounded-[4px] px-4 w-full ";
 
 const Contacts = () => {
   const { handleSubmit, control, register } = useForm();
-  const onSubmit = (data: {}) => {
-    console.log(data);
+  const onSubmit = async (data: {}) => {
+    sendContactForm(data);
   };
 
   return (
@@ -77,8 +79,7 @@ const Contacts = () => {
                   className="flex gap-2 items-center hover:opacity-70 active:opacity-50 transition-opacity"
                 >
                   <Image
-                    width={20}
-                    height={20}
+                    className="w-[24px] md:w-[20px] h-[24px] md:h-[20px]"
                     alt={contact.social}
                     src={contact.icon}
                   />

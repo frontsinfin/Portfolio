@@ -10,7 +10,7 @@ interface InputProps {
 const labelStyles = "relative";
 
 const ErrorsMessageStyles =
-  "absolute top-[80%] md:top-[90%] text-[10px] md:text-[12px] text-red-400 font-normal";
+  "absolute top-[85%] md:top-[90%] text-[10px] md:text-[12px] text-red-400 font-normal";
 
 const Input: React.FC<InputProps> = ({
   name,
