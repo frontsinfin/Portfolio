@@ -12,10 +12,14 @@ import phone from "../../../public/icons/phone.svg";
 
 export const contacts = [
   { id: "telegram", icon: telegram, link: "https://t.me/siniyfilin" },
-  { id: "github", icon: github, link: "" },
-  { id: "instagram", icon: instagram, link: "" },
+  { id: "github", icon: github, link: "https://github.com/frontsinfin" },
+  {
+    id: "instagram",
+    icon: instagram,
+    link: "https://instagram.com/snuysoviy_lis",
+  },
   { id: "vk", icon: vk, link: "https://vk.com/snyusovyi_lis" },
-  { id: "phone", icon: phone, link: "8 915 647-74-38" },
+  { id: "phone", icon: phone, link: "89156477438" },
 ];
 export const tools = [
   { name: "Figma", icon: figma },
@@ -89,7 +93,6 @@ export const navBarButtons = [
   "Портфолио",
   "Инструменты",
   "Отзывы",
-  "Контакты",
 ];
 
 import testHub from "../../../public/potrfolio/testHub.jpg";

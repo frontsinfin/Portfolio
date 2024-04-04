@@ -1,8 +1,20 @@
+"use client";
 import Image from "next/image";
 import avatar from "../../../public/avatar.jpg";
 import { contacts } from "../constants/constants";
+import { useState } from "react";
 
 const Header = () => {
+  const [hiddenPhone, setHiddenPhone] = useState(true);
+
+  const clickPhone = (e: string) => {
+    setHiddenPhone(false);
+    navigator.clipboard.writeText(e);
+    setTimeout(() => {
+      setHiddenPhone(true);
+    }, 1500);
+  };
+
   return (
     <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <section className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
@@ -17,14 +29,40 @@ const Header = () => {
             проектов и повысить свои навыки разработчика.
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
-            {contacts.map((social, idx) => (
-              <a key={idx} href={social.link} className="cursor-pointer">
-                <Image
-                  src={social.icon}
-                  alt={social.id}
-                  className="w-7 h-7 hover-icon"
-                />
-              </a>
+            {contacts.map((social) => (
+              <>
+                {social.id === "phone" ? (
+                  <button
+                    className="flex gap-2 cursor-pointer hover:opacity-70 active:opacity-50 transition-opacity"
+                    onClick={() => clickPhone(social.link)}
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.id}
+                      className={`w-7 h-7 hover-icon block`}
+                    />
+                    <span
+                      className="hidden"
+                      style={{ display: hiddenPhone ? "none" : "block" }}
+                    >
+                      {!hiddenPhone && "скопировано!"}
+                    </span>
+                  </button>
+                ) : (
+                  <a
+                    target="_blank"
+                    key={social.id}
+                    href={social.link}
+                    className="cursor-pointer hover:opacity-70 active:opacity-50 transition-opacity"
+                  >
+                    <Image
+                      src={social.icon}
+                      alt={social.id}
+                      className="w-7 h-7 hover-icon"
+                    />
+                  </a>
+                )}
+              </>
             ))}
           </div>
         </div>
