@@ -1,8 +1,8 @@
-import telegram from "../../../public/icons/send.svg";
+import telegram from "../../../public/icons/telegram.svg";
 import github from "../../../public/icons/github.svg";
-import instagram from "../../../public/icons/instagram.svg";
-import twitter from "../../../public/icons/twitter.svg";
 import figma from "../../../public/icons/figma.svg";
+import instagram from "../../../public/icons/instagram.svg";
+import vk from "../../../public/icons/vk.svg";
 import illustrator from "../../../public/icons/illustrator.svg";
 import photoshop from "../../../public/icons/photoshop.svg";
 import trello from "../../../public/icons/trello.svg";
@@ -10,7 +10,13 @@ import notion from "../../../public/icons/notion.svg";
 import vsCode from "../../../public/icons/vsCode.svg";
 import phone from "../../../public/icons/phone.svg";
 
-export const social = [telegram, github, instagram, twitter];
+export const contacts = [
+  { id: "telegram", icon: telegram, link: "https://t.me/siniyfilin" },
+  { id: "github", icon: github, link: "" },
+  { id: "instagram", icon: instagram, link: "" },
+  { id: "vk", icon: vk, link: "https://vk.com/snyusovyi_lis" },
+  { id: "phone", icon: phone, link: "8 915 647-74-38" },
+];
 export const tools = [
   { name: "Figma", icon: figma },
   { name: "Illustrator", icon: illustrator },

@@ -7,7 +7,7 @@ const NavBar = () => {
       className="
     items-start
     sticky
-    top-[20px]
+    top-[40px]
     hidden 
     md:flex 
     h-[100%]

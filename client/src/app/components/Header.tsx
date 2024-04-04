@@ -1,7 +1,6 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.jpg";
-import { social } from "../constants/constants";
-import TitleComp from "./TitleComp";
+import { contacts } from "../constants/constants";
 
 const Header = () => {
   return (
@@ -18,9 +17,13 @@ const Header = () => {
             проектов и повысить свои навыки разработчика.
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
-            {social.map((icon, idx) => (
-              <a key={idx} className="cursor-pointer">
-                <Image src={icon} alt={icon} className="w-7 h-7 hover-icon" />
+            {contacts.map((social, idx) => (
+              <a key={idx} href={social.link} className="cursor-pointer">
+                <Image
+                  src={social.icon}
+                  alt={social.id}
+                  className="w-7 h-7 hover-icon"
+                />
               </a>
             ))}
           </div>
