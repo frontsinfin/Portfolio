@@ -6,15 +6,16 @@ interface UnfoldContainerProps {
 }
 
 const UnfoldContainer: React.FC<UnfoldContainerProps> = ({ children }) => {
-  const [unfold, setUnfold] = useState(true);
+  const [unfold, setUnfold] = useState(false);
   const isUnfold = () => {
     setUnfold(!unfold);
   };
   return (
     <div className="flex flex-col gap-2 items-start">
       <section
-        className="flex flex-col gap-4 md:gap-10 h-[400px] overflow-hidden"
-        style={{ height: unfold ? "auto" : "400px" }}
+        className={`flex flex-col gap-4 md:gap-10 overflow-hidden ${
+          unfold ? "unfold_chronology__active" : "unfold_chronology"
+        }`}
       >
         {children}
       </section>
