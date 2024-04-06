@@ -14,7 +14,8 @@ const Header = () => {
       setHiddenPhone(true);
     }, 1500);
   };
-
+  const stylesLink =
+    "flex gap-2 cursor-pointer hover:opacity-100 active:opacity-100 md:hover:opacity-70 md:active:opacity-50 transition-opacity";
   return (
     <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <section className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
@@ -28,12 +29,12 @@ const Header = () => {
             навыки разработчика.Стремлюсь взять на себя больше интересных
             проектов и повысить свои навыки разработчика.
           </p>
-          <div className="flex gap-4 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             {contacts.map((social) => (
-              <>
+              <div key={social.id}>
                 {social.id === "phone" ? (
                   <button
-                    className="flex gap-2 cursor-pointer hover:opacity-70 active:opacity-50 transition-opacity"
+                    className={stylesLink}
                     onClick={() => clickPhone(social.link)}
                   >
                     <Image
@@ -42,19 +43,14 @@ const Header = () => {
                       className={`w-7 h-7 hover-icon block`}
                     />
                     <span
-                      className="hidden"
-                      style={{ display: hiddenPhone ? "none" : "block" }}
+                      className="transition-opacity opacity-100 fixed top-[92%] right-5 bg-[#302727] py-[4px] px-2 rounded-md border-white border-[1px]"
+                      style={{ opacity: hiddenPhone ? 0 : 1 }}
                     >
-                      {!hiddenPhone && "скопировано!"}
+                      скопировано!
                     </span>
                   </button>
                 ) : (
-                  <a
-                    target="_blank"
-                    key={social.id}
-                    href={social.link}
-                    className="cursor-pointer hover:opacity-70 active:opacity-50 transition-opacity"
-                  >
+                  <a target="_blank" href={social.link} className={stylesLink}>
                     <Image
                       src={social.icon}
                       alt={social.id}
@@ -62,12 +58,12 @@ const Header = () => {
                     />
                   </a>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>
       </section>
-      <div className=" flex items-center overflow-hidden w-[200px] h-[200px] md:min-h-[250px] md:min-w-[250px] lg:min-h-[300px] lg:min-w-[300px] rounded-full">
+      <div className=" flex items-center overflow-hidden w-[240px] h-[240px] md:min-h-[250px] md:min-w-[250px] lg:min-h-[300px] lg:min-w-[300px] rounded-full">
         <Image src={avatar} alt="avatar"></Image>
       </div>
     </header>

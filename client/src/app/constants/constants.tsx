@@ -9,6 +9,7 @@ import trello from "../../../public/icons/trello.svg";
 import notion from "../../../public/icons/notion.svg";
 import vsCode from "../../../public/icons/vsCode.svg";
 import phone from "../../../public/icons/phone.svg";
+import email from "../../../public/icons/mail.svg";
 
 export const contacts = [
   { id: "telegram", icon: telegram, link: "https://t.me/siniyfilin" },
@@ -19,6 +20,7 @@ export const contacts = [
     link: "https://instagram.com/snuysoviy_lis",
   },
   { id: "vk", icon: vk, link: "https://vk.com/snyusovyi_lis" },
+  { id: "email", icon: email, link: "mailto:siniyfilin@yandex.ru" },
   { id: "phone", icon: phone, link: "89156477438" },
 ];
 export const tools = [
@@ -95,13 +97,17 @@ export const navBarButtons = [
   "Отзывы",
 ];
 
-import testHub from "../../../public/potrfolio/testHub.jpg";
+import testHubFull from "../../../public/potrfolio/full/testHub.jpg";
+import landingFull from "../../../public/potrfolio/full/landing.jpg";
+import testHubPreview from "../../../public/potrfolio/preview/testHub.jpg";
+import landingPreview from "../../../public/potrfolio/preview/landing.jpg";
 export const portfolioImages = [
-  { name: "testHub", img: testHub },
-  { name: "testHub", img: testHub },
-  { name: "testHub", img: testHub },
-  { name: "testHub", img: testHub },
-  { name: "testHub", img: testHub },
+  { name: "testHub", full: testHubFull, preview: testHubPreview },
+  { name: "landing", full: landingFull, preview: landingPreview },
+  { name: "testHub2", full: testHubFull, preview: testHubPreview },
+  { name: "landing2", full: landingFull, preview: landingPreview },
+  { name: "testHub3", full: testHubFull, preview: testHubPreview },
+  { name: "landing3", full: landingFull, preview: landingPreview },
 ];
 
 import igor from "../../../public/reviews/igor.png";
@@ -115,35 +121,35 @@ export const reviewsCards = [
   },
   {
     avatar: igor,
-    name: "Игорь Судак",
+    name: "Игорь Тудак",
     position: "Руководитель умный-дом.рф",
     review:
       "Исполнительный, быстрый, общительный и такчтиный человек. Работа сделана в кратчайшие сроки, все по тех.заданию и профессианально обограны слодные моменты дизайна!",
   },
   {
     avatar: igor,
-    name: "Игорь Судак",
+    name: "Игорь Мудак",
     position: "Руководитель умный-дом.рф",
     review:
       "Исполнительный, быстрый, общительный и такчтиный человек. Работа сделана в кратчайшие сроки, все по тех.заданию и профессианально обограны слодные моменты дизайна!",
   },
   {
     avatar: igor,
-    name: "Игорь Судак",
+    name: "Игорь Кудак",
     position: "Руководитель умный-дом.рф",
     review:
       "Исполнительный, быстрый, общительный и такчтиный человек. Работа сделана в кратчайшие сроки, все по тех.заданию и профессианально обограны слодные моменты дизайна!",
   },
   {
     avatar: igor,
-    name: "Игорь Судак",
+    name: "Игорь Цудак",
     position: "Руководитель умный-дом.рф",
     review:
       "Исполнительный, быстрый, общительный и такчтиный человек. Работа сделана в кратчайшие сроки, все по тех.заданию и профессианально обограны слодные моменты дизайна!",
   },
   {
     avatar: igor,
-    name: "Игорь Судак",
+    name: "Игорь Иудак",
     position: "Руководитель умный-дом.рф",
     review:
       "Исполнительный, быстрый, общительный и такчтиный человек. Работа сделана в кратчайшие сроки, все по тех.заданию и профессианально обограны слодные моменты дизайна!",
