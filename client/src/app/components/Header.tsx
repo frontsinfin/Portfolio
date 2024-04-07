@@ -43,7 +43,7 @@ const Header = () => {
                       className={`w-7 h-7 hover-icon block`}
                     />
                     <span
-                      className="transition-opacity opacity-100 fixed top-[92%] right-5 bg-[#302727] py-[4px] px-2 rounded-md border-white border-[1px]"
+                      className="transition-opacity opacity-100 fixed top-[92%] right-5 bg-[#302727] py-[4px] px-2 rounded-md border-white border-[1px] z-20"
                       style={{ opacity: hiddenPhone ? 0 : 1 }}
                     >
                       скопировано!
