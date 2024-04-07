@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <section className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
-        <h1 className="text-center md:text-start text-4xl md:text-6xl font-bold">
+        <h1 className="text-center md:text-start text-4xl md:text-[52px] font-bold">
           Галемов Иван
         </h1>
         <div className="flex flex-col gap-4">

@@ -97,17 +97,58 @@ export const navBarButtons = [
   "Отзывы",
 ];
 
-import testHubFull from "../../../public/potrfolio/full/testHub.jpg";
-import landingFull from "../../../public/potrfolio/full/landing.jpg";
-import testHubPreview from "../../../public/potrfolio/preview/testHub.jpg";
-import landingPreview from "../../../public/potrfolio/preview/landing.jpg";
+import testHubPreview from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
+import testHub1 from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
+import testHub2 from "../../../public/potrfolio/full/testHub/testHub 2.jpg";
+import testHub3 from "../../../public/potrfolio/full/testHub/testHub 3.jpg";
+import testHub4 from "../../../public/potrfolio/full/testHub/testHub 4.jpg";
+import testHub5 from "../../../public/potrfolio/full/testHub/testHub 5.jpg";
+import testHub6 from "../../../public/potrfolio/full/testHub/testHub 6.jpg";
+import testHub7 from "../../../public/potrfolio/full/testHub/testHub 7.jpg";
+import testHub8 from "../../../public/potrfolio/full/testHub/testHub 8.jpg";
 export const portfolioImages = [
-  { name: "testHub", full: testHubFull, preview: testHubPreview },
-  { name: "landing", full: landingFull, preview: landingPreview },
-  { name: "testHub2", full: testHubFull, preview: testHubPreview },
-  { name: "landing2", full: landingFull, preview: landingPreview },
-  { name: "testHub3", full: testHubFull, preview: testHubPreview },
-  { name: "landing3", full: landingFull, preview: landingPreview },
+  {
+    name: "testHub",
+    case: [
+      testHub1,
+      testHub2,
+      testHub3,
+      testHub4,
+      testHub5,
+      testHub6,
+      testHub7,
+      testHub8,
+    ],
+    preview: testHubPreview,
+  },
+  {
+    name: "testHub",
+    case: [
+      testHub1,
+      testHub2,
+      testHub3,
+      testHub4,
+      testHub5,
+      testHub6,
+      testHub7,
+      testHub8,
+    ],
+    preview: testHubPreview,
+  },
+  {
+    name: "testHub",
+    case: [
+      testHub1,
+      testHub2,
+      testHub3,
+      testHub4,
+      testHub5,
+      testHub6,
+      testHub7,
+      testHub8,
+    ],
+    preview: testHubPreview,
+  },
 ];
 
 import igor from "../../../public/reviews/igor.png";

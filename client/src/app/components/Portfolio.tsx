@@ -18,7 +18,6 @@ export default function Portfolio() {
   const clickCloseImage = () => {
     setValueSlide(true);
     setIsOpen(null);
-    console.log(valueSlide);
   };
   useEffect(() => {
     if (!valueSlide) {
@@ -36,33 +35,33 @@ export default function Portfolio() {
         hideScrollbars={false}
         nativeMobileScroll
       >
-        {portfolioImages.map((item, idx) => {
+        {portfolioImages.map((slide, slideIdx) => {
           return (
-            <div
-              key={item.name}
-              className={`portfolio_container ${
-                isOpen === idx ? "portfolio_container__active" : ""
-              }`}
-            >
+            <>
               <Image
                 priority
-                onClick={() => clickOpenImage(idx)}
-                id={item.name}
-                alt={item.name}
-                className={`portfolio_image ${
-                  isOpen === idx ? "portfolio_image__active" : ""
-                }`}
-                src={isOpen === idx ? item.full : item.preview}
+                onClick={() => clickOpenImage(slideIdx)}
+                id={slide.name}
+                alt={slide.name}
+                src={slide.preview}
+                className="portfolio_preview"
               />
-              <Image
-                alt="x"
-                src={closeIcon}
-                onClick={clickCloseImage}
-                className={`portfolio_close ${
-                  isOpen === idx ? "portfolio_close__active" : ""
-                }`}
-              />
-            </div>
+              {isOpen === slideIdx && (
+                <div className="case_opacity" onClick={clickCloseImage}>
+                  {slide.case.map((caseItem, caseItemIdx) => (
+                    <Image
+                      className="case_image"
+                      onClick={(e) => e.stopPropagation()}
+                      key={caseItemIdx}
+                      priority
+                      src={caseItem}
+                      alt="item"
+                    />
+                  ))}
+                  {/* <Image className="case_close" src={closeIcon} alt="x" /> */}
+                </div>
+              )}
+            </>
           );
         })}
       </ScrollContainer>
