@@ -5,6 +5,7 @@ import { portfolioImages } from "../constants/constants";
 import ScrollContainer from "react-indiana-drag-scroll";
 import { useEffect, useState } from "react";
 import closeIcon from "../../../public/icons/close.svg";
+import Link from "next/link";
 
 export default function Portfolio() {
   const [valueSlide, setValueSlide] = useState(true);
@@ -58,7 +59,7 @@ export default function Portfolio() {
                       alt="item"
                     />
                   ))}
-                  {/* <Image className="case_close" src={closeIcon} alt="x" /> */}
+                  <Image className="case_close" src={closeIcon} alt="x" />
                 </div>
               )}
             </>

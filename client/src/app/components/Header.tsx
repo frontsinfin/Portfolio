@@ -2,7 +2,7 @@
 import Image from "next/image";
 import avatar from "../../../public/avatar.jpg";
 import { contacts } from "../constants/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [hiddenPhone, setHiddenPhone] = useState(true);
