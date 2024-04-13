@@ -162,13 +162,13 @@ export const portfolioImages = [
     preview: testHubPreview,
   },
   {
-    id: 2,
+    id: "2",
     name: "samsung",
     case: [samsung1, samsung2, samsung3, samsung4],
     preview: samsungPreview,
   },
   {
-    id: 3,
+    id: "3",
     name: "testHub",
     case: [
       testHub1,
