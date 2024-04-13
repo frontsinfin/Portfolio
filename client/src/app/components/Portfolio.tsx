@@ -5,7 +5,6 @@ import { portfolioImages } from "../constants/constants";
 import ScrollContainer from "react-indiana-drag-scroll";
 import { useEffect, useState } from "react";
 import closeIcon from "../../../public/icons/close.svg";
-import Link from "next/link";
 
 export default function Portfolio() {
   const [valueSlide, setValueSlide] = useState(true);
@@ -42,7 +41,7 @@ export default function Portfolio() {
               <Image
                 priority
                 onClick={() => clickOpenImage(slideIdx)}
-                id={slide.name}
+                id={slide.id}
                 alt={slide.name}
                 src={slide.preview}
                 className="portfolio_preview"

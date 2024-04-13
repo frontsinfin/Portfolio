@@ -18,6 +18,14 @@ const Chronology = () => {
               <TitleChronology title={card.title} typeWork={card.typeWork} />
               <TagsChronology tags={card.tags} />
               <RolsChronology rols={card.rols} task={card.task} />
+              {card.imagesPortfolio && (
+                <a
+                  className="text-sm font-light text-blue-400"
+                  href={`#${card.id}`}
+                >
+                  смотреть в портфолио
+                </a>
+              )}
             </section>
           </div>
         ))}
