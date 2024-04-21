@@ -70,7 +70,8 @@
 }
 
 .portfolio_preview {
-  width: 48%;
+  cursor: pointer;
+  width: 80%;
   transition: transform 0.2s ease;
   border-radius: 8px;
 }
