@@ -169,7 +169,12 @@ export const portfolioImages = [
       сантехника8,
     ],
     preview: сантехникаPreview,
-    link: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1RIE93UNMzAuG8QkqnkxPV%2F%25D0%25A1%25D0%25B0%25D0%25B9%25D1%2582-%25D0%25A1%25D0%25B0%25D0%25BD%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B8%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DfgvDd7duzzoCg3fj-1",
+    links: {
+      linkToWebSite: "https://sporta-2b.ru/",
+      linkToGitHub: "https://github.com/frontsinfin/Portfolio",
+      linkToFigma:
+        "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1RIE93UNMzAuG8QkqnkxPV%2F%25D0%25A1%25D0%25B0%25D0%25B9%25D1%2582-%25D0%25A1%25D0%25B0%25D0%25BD%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B8%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DfgvDd7duzzoCg3fj-1",
+    },
   },
   {
     id: chronologyCards[2].id,
@@ -185,12 +190,14 @@ export const portfolioImages = [
       testHub8,
     ],
     preview: testHubPreview,
+    links: {},
   },
   {
     id: "",
     name: "samsung",
     case: [samsung1, samsung2, samsung3, samsung4],
     preview: samsungPreview,
+    links: {},
   },
 ];
 

@@ -5,6 +5,7 @@ import { portfolioImages } from "../constants/constants";
 import ScrollContainer from "react-indiana-drag-scroll";
 import { useEffect, useState } from "react";
 import closeIcon from "../../../public/icons/close.svg";
+import SlideLinks from "./SlideLinks";
 
 export default function Portfolio() {
   const [valueSlide, setValueSlide] = useState(true);
@@ -59,14 +60,10 @@ export default function Portfolio() {
                       alt="item"
                     />
                   ))}
-                  <a
-                    onClick={(e) => e.stopPropagation()}
-                    target="_blank"
-                    href={slide.link}
-                    className="text-sm font-light text-blue-400 hover:opacity-80 active:opacity-60 transition-opacity mt-4"
-                  >
-                    смотреть в figma
-                  </a>
+                  <SlideLinks
+                    slideLinks={slide.links}
+                    stopPropagation={(e) => e.stopPropagation()}
+                  />
                   <Image className="case_close" src={closeIcon} alt="x" />
                 </div>
               )}
