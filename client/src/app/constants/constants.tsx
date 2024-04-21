@@ -35,7 +35,7 @@ export const tools = [
 
 export const chronologyCards = [
   {
-    id: "Начало",
+    id: 0,
     data: "июнь 2023",
     title: "Начало пути",
     typeWork: "Личная/учебная деятельность",
@@ -44,7 +44,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: "Каталог магазина",
+    id: 1,
     data: "июнь 2023",
     title: "Каталог магазина",
     typeWork: "Личная/учебная деятельность",
@@ -54,7 +54,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: "TestHub",
+    id: 2,
     data: "сентябрь 2023",
     title: "TestHub - сайт опросник",
     typeWork: "Личная/учебная деятельность",
@@ -64,7 +64,7 @@ export const chronologyCards = [
     imagesPortfolio: true,
   },
   {
-    id: "SolarHelper",
+    id: 3,
     data: "октябрь 2023",
     title: "SolarHelper - сервис солнечных панелей",
     typeWork: "Совместная/коммерческая деятельность",
@@ -79,10 +79,10 @@ export const chronologyCards = [
     ],
     rols: "Создание с командой сервиса по подбору солнечных панелей",
     task: "Доработка существующего дизайна, создание дизайн-системы, разработка UI-компонентов и миксинов, верстка компонентов. Ведение задач в trello и простенькой документации проекта. Работы с ветками в Git",
-    imagesPortfolio: true,
+    imagesPortfolio: false,
   },
   {
-    id: "Backend",
+    id: 4,
     data: "декабрь 2023",
     title: "Простой Backend",
     typeWork: "Личная/учебная деятельность",
@@ -92,7 +92,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: "Сантехника Апшеронск",
+    id: 5,
     data: "январь 2024",
     title: "Магазин Сантехники",
     typeWork: "Совместная/коммерческая деятельность",
@@ -102,7 +102,7 @@ export const chronologyCards = [
     imagesPortfolio: true,
   },
   {
-    id: "портфолио",
+    id: 6,
     data: "февраль 2024",
     title: "Это портфолио",
     typeWork: "Личная деятельность",
@@ -112,14 +112,14 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: "Сайт Адвоката",
+    id: 7,
     data: "март 2024",
     title: "Сайт для Адвоката",
     typeWork: "Личная/коммерческая деятельность",
     tags: ["Figma", "Photoshop"],
     rols: "Создание дизайна сайта для Адвоката Оксаны Лосюк",
     task: "Оценка рынка и конкурентов, создание логотипа, разработка дизайна под компьютеры и телефоны",
-    imagesPortfolio: true,
+    imagesPortfolio: false,
   },
 ];
 
@@ -131,6 +131,15 @@ export const navBarButtons = [
   "Отзывы",
 ];
 
+import сантехникаPreview from "../../../public/potrfolio/full/Сантехника Апшеронск/1.jpg";
+import сантехника1 from "../../../public/potrfolio/full/Сантехника Апшеронск/1.jpg";
+import сантехника2 from "../../../public/potrfolio/full/Сантехника Апшеронск/2.jpg";
+import сантехника3 from "../../../public/potrfolio/full/Сантехника Апшеронск/3.jpg";
+import сантехника4 from "../../../public/potrfolio/full/Сантехника Апшеронск/4.jpg";
+import сантехника5 from "../../../public/potrfolio/full/Сантехника Апшеронск/5.jpg";
+import сантехника6 from "../../../public/potrfolio/full/Сантехника Апшеронск/6.jpg";
+import сантехника7 from "../../../public/potrfolio/full/Сантехника Апшеронск/7.jpg";
+import сантехника8 from "../../../public/potrfolio/full/Сантехника Апшеронск/8.jpg";
 import testHubPreview from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
 import testHub1 from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
 import testHub2 from "../../../public/potrfolio/full/testHub/testHub 2.jpg";
@@ -147,7 +156,22 @@ import samsung3 from "../../../public/potrfolio/full/samsung/samsung 3.jpg";
 import samsung4 from "../../../public/potrfolio/full/samsung/samsung 4.jpg";
 export const portfolioImages = [
   {
-    id: "TestHub",
+    id: chronologyCards[5].id,
+    name: "Сантехника Апшеронск",
+    case: [
+      сантехника1,
+      сантехника2,
+      сантехника3,
+      сантехника4,
+      сантехника5,
+      сантехника6,
+      сантехника7,
+      сантехника8,
+    ],
+    preview: сантехникаPreview,
+  },
+  {
+    id: chronologyCards[2].id,
     name: "testHub",
     case: [
       testHub1,
@@ -162,25 +186,10 @@ export const portfolioImages = [
     preview: testHubPreview,
   },
   {
-    id: "2",
+    id: 1,
     name: "samsung",
     case: [samsung1, samsung2, samsung3, samsung4],
     preview: samsungPreview,
-  },
-  {
-    id: "3",
-    name: "testHub",
-    case: [
-      testHub1,
-      testHub2,
-      testHub3,
-      testHub4,
-      testHub5,
-      testHub6,
-      testHub7,
-      testHub8,
-    ],
-    preview: testHubPreview,
   },
 ];
 
