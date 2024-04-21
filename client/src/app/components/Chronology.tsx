@@ -30,7 +30,7 @@ const Chronology = () => {
               <RolsChronology rols={card.rols} task={card.task} />
               {card.imagesPortfolio && (
                 <a
-                  className="text-sm font-light text-blue-400"
+                  className="text-sm font-light text-blue-400 hover:opacity-80 active:opacity-60 transition-opacity"
                   href={`#${card.id}`}
                   // onClick={() => {
                   //   changeScrollId(card.id);

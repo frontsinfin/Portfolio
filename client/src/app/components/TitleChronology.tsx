@@ -12,7 +12,7 @@ const TitleChronology: React.FC<TitleChronologyProps> = ({
       <h2 className="text-[20px] md:text-2xl font-bold leading-none">
         {title}
       </h2>
-      <h3 className="text-[10px] md:text-xs">#{typeWork}</h3>
+      {/* <h3 className="text-[10px] md:text-xs">#{typeWork}</h3> */}
     </div>
   );
 };
