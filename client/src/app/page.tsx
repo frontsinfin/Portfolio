@@ -14,7 +14,7 @@ export default function Home() {
           <Chronology />
           <Portfolio />
           <Tools />
-          <Reviews />
+          {/* <Reviews /> */}
         </div>
         <NavBar />
       </div>

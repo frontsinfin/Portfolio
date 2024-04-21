@@ -9,6 +9,7 @@ import closeIcon from "../../../public/icons/close.svg";
 export default function Portfolio() {
   const [valueSlide, setValueSlide] = useState(true);
   const [isOpen, setIsOpen] = useState<null | number>(null);
+
   const clickOpenImage = (idx: null | number) => {
     setValueSlide(false);
     setIsOpen(idx);

@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import { chronologyCards } from "../constants/constants";
 import DateChronology from "./DateChronology";
 import RolsChronology from "./RolsChronology";
@@ -7,6 +9,14 @@ import TitleComp from "./TitleComp";
 import UnfoldContainer from "./UnfoldContainer";
 
 const Chronology = () => {
+  // const [activeScrollId, setActiveScrollId] = useState("");
+  // const changeScrollId = (e: string) => {
+  //   setActiveScrollId(e);
+  //   setTimeout(() => {
+  //     setActiveScrollId("");
+  //   }, 1500);
+  // };
+
   return (
     <UnfoldContainer>
       <TitleComp title="Хронология" titleId="Хронология" />
@@ -22,6 +32,9 @@ const Chronology = () => {
                 <a
                   className="text-sm font-light text-blue-400"
                   href={`#${card.id}`}
+                  // onClick={() => {
+                  //   changeScrollId(card.id);
+                  // }}
                 >
                   смотреть в портфолио
                 </a>

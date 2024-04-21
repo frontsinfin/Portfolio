@@ -35,7 +35,7 @@ export const tools = [
 
 export const chronologyCards = [
   {
-    id: 0,
+    id: "Начало пути",
     data: "июнь 2023",
     title: "Начало пути",
     typeWork: "Личная/учебная деятельность",
@@ -44,7 +44,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: 1,
+    id: "Каталог магазина",
     data: "июнь 2023",
     title: "Каталог магазина",
     typeWork: "Личная/учебная деятельность",
@@ -54,7 +54,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: 2,
+    id: "TestHub - сайт опросник",
     data: "сентябрь 2023",
     title: "TestHub - сайт опросник",
     typeWork: "Личная/учебная деятельность",
@@ -64,7 +64,7 @@ export const chronologyCards = [
     imagesPortfolio: true,
   },
   {
-    id: 3,
+    id: "SolarHelper - сервис солнечных панелей",
     data: "октябрь 2023",
     title: "SolarHelper - сервис солнечных панелей",
     typeWork: "Совместная/коммерческая деятельность",
@@ -82,7 +82,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: 4,
+    id: "Простой Backend",
     data: "декабрь 2023",
     title: "Простой Backend",
     typeWork: "Личная/учебная деятельность",
@@ -92,7 +92,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: 5,
+    id: "Магазин Сантехники",
     data: "январь 2024",
     title: "Магазин Сантехники",
     typeWork: "Совместная/коммерческая деятельность",
@@ -102,7 +102,7 @@ export const chronologyCards = [
     imagesPortfolio: true,
   },
   {
-    id: 6,
+    id: "Это портфолио",
     data: "февраль 2024",
     title: "Это портфолио",
     typeWork: "Личная деятельность",
@@ -112,7 +112,7 @@ export const chronologyCards = [
     imagesPortfolio: false,
   },
   {
-    id: 7,
+    id: "Сайт для Адвоката",
     data: "март 2024",
     title: "Сайт для Адвоката",
     typeWork: "Личная/коммерческая деятельность",
@@ -128,7 +128,7 @@ export const navBarButtons = [
   "Хронология",
   "Портфолио",
   "Инструменты",
-  "Отзывы",
+  // "Отзывы",
 ];
 
 import сантехникаPreview from "../../../public/potrfolio/full/Сантехника Апшеронск/1.jpg";
@@ -186,7 +186,7 @@ export const portfolioImages = [
     preview: testHubPreview,
   },
   {
-    id: 1,
+    id: "",
     name: "samsung",
     case: [samsung1, samsung2, samsung3, samsung4],
     preview: samsungPreview,
