@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import avatar from "../../../public/avatar.jpg";
+import avatar from "../../../public/avatar.svg";
 import { contacts } from "../constants/constants";
 import { useEffect, useState } from "react";
 
