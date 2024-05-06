@@ -75,6 +75,21 @@
   transition: transform 0.2s ease;
   border-radius: 8px;
 }
+.portfolio_preview:target {
+  animation: scroll-to-animate 1s ease-in 1.5s;
+}
+@keyframes scroll-to-animate {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .portfolio_preview:hover {
   transform: scale(0.99, 0.99);
 }

@@ -17,7 +17,7 @@ const Header = () => {
   const stylesLink =
     "flex gap-2 cursor-pointer hover:opacity-100 active:opacity-100 md:hover:opacity-70 md:active:opacity-50 transition-opacity";
   return (
-    <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row ">
+    <header className="gap-6 lg:gap-20 flex items-center flex-col-reverse md:flex-row">
       <section className="md:w-[70%] col-span-2 flex flex-col gap-2 md:gap-3 md:py-4">
         <h1 className="text-center md:text-start text-4xl md:text-[52px] font-bold">
           Галемов Иван

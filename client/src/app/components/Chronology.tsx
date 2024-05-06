@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { chronologyCards } from "../constants/constants";
+import { chronologyCards, navBarButtons } from "../constants/constants";
 import DateChronology from "./DateChronology";
 import RolsChronology from "./RolsChronology";
 import TagsChronology from "./TagsChronology";
@@ -19,7 +19,7 @@ const Chronology = () => {
 
   return (
     <UnfoldContainer>
-      <TitleComp title="Хронология" titleId="Хронология" />
+      <TitleComp title={navBarButtons[1]} titleId={navBarButtons[1]} />
       <div className="flex flex-col gap-4 items-start">
         {chronologyCards.map((card) => (
           <div className="grid grid-flow-col last-child" key={card.id}>

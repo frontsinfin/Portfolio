@@ -193,7 +193,7 @@ export const portfolioImages = [
     links: {},
   },
   {
-    id: "",
+    id: "1",
     name: "samsung",
     case: [samsung1, samsung2, samsung3, samsung4],
     preview: samsungPreview,

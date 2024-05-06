@@ -3,7 +3,7 @@ import Image from "next/image";
 import TitleComp from "./TitleComp";
 import { portfolioImages } from "../constants/constants";
 import ScrollContainer from "react-indiana-drag-scroll";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import closeIcon from "../../../public/icons/close.svg";
 import SlideLinks from "./SlideLinks";
 
@@ -14,7 +14,6 @@ export default function Portfolio() {
   const clickOpenImage = (idx: null | number) => {
     setValueSlide(false);
     setIsOpen(idx);
-    console.log(valueSlide);
   };
 
   const clickCloseImage = () => {
@@ -39,7 +38,7 @@ export default function Portfolio() {
       >
         {portfolioImages.map((slide, slideIdx) => {
           return (
-            <>
+            <Fragment key={slide.id}>
               <Image
                 priority
                 onClick={() => clickOpenImage(slideIdx)}
@@ -67,7 +66,7 @@ export default function Portfolio() {
                   <Image className="case_close" src={closeIcon} alt="x" />
                 </div>
               )}
-            </>
+            </Fragment>
           );
         })}
       </ScrollContainer>
