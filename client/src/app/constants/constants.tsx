@@ -131,29 +131,29 @@ export const navBarButtons = [
   // "Отзывы",
 ];
 
-import сантехникаPreview from "../../../public/potrfolio/full/Сантехника Апшеронск/1.jpg";
-import сантехника1 from "../../../public/potrfolio/full/Сантехника Апшеронск/1.jpg";
-import сантехника2 from "../../../public/potrfolio/full/Сантехника Апшеронск/2.jpg";
-import сантехника3 from "../../../public/potrfolio/full/Сантехника Апшеронск/3.jpg";
-import сантехника4 from "../../../public/potrfolio/full/Сантехника Апшеронск/4.jpg";
-import сантехника5 from "../../../public/potrfolio/full/Сантехника Апшеронск/5.jpg";
-import сантехника6 from "../../../public/potrfolio/full/Сантехника Апшеронск/6.jpg";
-import сантехника7 from "../../../public/potrfolio/full/Сантехника Апшеронск/7.jpg";
-import сантехника8 from "../../../public/potrfolio/full/Сантехника Апшеронск/8.jpg";
-import testHubPreview from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
-import testHub1 from "../../../public/potrfolio/full/testHub/testHub 1.jpg";
-import testHub2 from "../../../public/potrfolio/full/testHub/testHub 2.jpg";
-import testHub3 from "../../../public/potrfolio/full/testHub/testHub 3.jpg";
-import testHub4 from "../../../public/potrfolio/full/testHub/testHub 4.jpg";
-import testHub5 from "../../../public/potrfolio/full/testHub/testHub 5.jpg";
-import testHub6 from "../../../public/potrfolio/full/testHub/testHub 6.jpg";
-import testHub7 from "../../../public/potrfolio/full/testHub/testHub 7.jpg";
-import testHub8 from "../../../public/potrfolio/full/testHub/testHub 8.jpg";
-import samsungPreview from "../../../public/potrfolio/full/samsung/samsung 1.jpg";
-import samsung1 from "../../../public/potrfolio/full/samsung/samsung 1.jpg";
-import samsung2 from "../../../public/potrfolio/full/samsung/samsung 2.jpg";
-import samsung3 from "../../../public/potrfolio/full/samsung/samsung 3.jpg";
-import samsung4 from "../../../public/potrfolio/full/samsung/samsung 4.jpg";
+import сантехникаPreview from "../../../public/potrfolio/full/Сантехника Апшеронск/1.svg";
+import сантехника1 from "../../../public/potrfolio/full/Сантехника Апшеронск/1.svg";
+import сантехника2 from "../../../public/potrfolio/full/Сантехника Апшеронск/2.svg";
+import сантехника3 from "../../../public/potrfolio/full/Сантехника Апшеронск/3.svg";
+import сантехника4 from "../../../public/potrfolio/full/Сантехника Апшеронск/4.svg";
+import сантехника5 from "../../../public/potrfolio/full/Сантехника Апшеронск/5.svg";
+import сантехника6 from "../../../public/potrfolio/full/Сантехника Апшеронск/6.svg";
+import сантехника7 from "../../../public/potrfolio/full/Сантехника Апшеронск/7.svg";
+import сантехника8 from "../../../public/potrfolio/full/Сантехника Апшеронск/8.svg";
+import testHubPreview from "../../../public/potrfolio/full/testHub/testHub 1.svg";
+import testHub1 from "../../../public/potrfolio/full/testHub/testHub 1.svg";
+import testHub2 from "../../../public/potrfolio/full/testHub/testHub 2.svg";
+import testHub3 from "../../../public/potrfolio/full/testHub/testHub 3.svg";
+import testHub4 from "../../../public/potrfolio/full/testHub/testHub 4.svg";
+import testHub5 from "../../../public/potrfolio/full/testHub/testHub 5.svg";
+import testHub6 from "../../../public/potrfolio/full/testHub/testHub 6.svg";
+import testHub7 from "../../../public/potrfolio/full/testHub/testHub 7.svg";
+import testHub8 from "../../../public/potrfolio/full/testHub/testHub 8.svg";
+import samsungPreview from "../../../public/potrfolio/full/samsung/samsung 1.svg";
+import samsung1 from "../../../public/potrfolio/full/samsung/samsung 1.svg";
+import samsung2 from "../../../public/potrfolio/full/samsung/samsung 2.svg";
+import samsung3 from "../../../public/potrfolio/full/samsung/samsung 3.svg";
+import samsung4 from "../../../public/potrfolio/full/samsung/samsung 4.svg";
 export const portfolioImages = [
   {
     id: chronologyCards[5].id,
