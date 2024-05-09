@@ -10,7 +10,7 @@ interface InputProps {
 const labelStyles = "relative";
 
 const ErrorsMessageStyles =
-  "absolute top-[85%] md:top-[90%] text-[10px] md:text-[12px] text-red-400 font-normal";
+  "absolute top-[85%] md:top-[90%] text-[10px] md:text-[12px] text-[#0085FF] font-normal";
 
 const Input: React.FC<InputProps> = ({
   name,
@@ -26,7 +26,9 @@ const Input: React.FC<InputProps> = ({
       <input
         type={type}
         placeholder={placeholder}
-        className={`${InputStyles} ${fieldState.error ? "border-red-400" : ""}`}
+        className={`${InputStyles} ${
+          fieldState.error ? "border-[#0085FF]" : ""
+        }`}
         id={name}
         {...field}
       />

@@ -23,7 +23,7 @@ const NavBar = () => {
         <a
           key={button}
           href={`#${button}`}
-          className="text-white hover:text-red-400 active:text-red-300 hover:bg-transparent  min-w-0 font-sans text-[18px] leading-[1.4] transition-colors"
+          className="text-white hover:text-[#0085FF] active:text-[#60B2FF] hover:bg-transparent  min-w-0 font-sans text-[18px] leading-[1.4] transition-colors"
         >
           {button}
         </a>

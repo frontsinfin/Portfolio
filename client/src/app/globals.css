@@ -19,6 +19,7 @@
 * {
   scroll-behavior: smooth;
 }
+
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
     width: 15px;
@@ -33,7 +34,7 @@
   .scrollbar::-webkit-scrollbar-thumb {
     background: #ffffff;
     border-radius: 100vh;
-    border: 5px solid #302727;
+    border: 5px solid #06070e;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
@@ -58,11 +59,7 @@
 .unfold_chronology::after {
   content: "";
   position: absolute;
-  background: linear-gradient(
-    0deg,
-    rgba(48, 39, 39, 1) 0%,
-    rgba(255, 255, 255, 0) 50%
-  );
+  background: linear-gradient(0deg, #06070e, #06070e00);
   top: 0;
   left: 0;
   width: 100%;

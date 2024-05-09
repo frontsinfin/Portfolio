@@ -40,11 +40,12 @@ const Header = () => {
                   >
                     <Image
                       src={social.icon}
+                      color="#0085FF"
                       alt={social.id}
-                      className={`w-7 h-7 hover-icon block`}
+                      className={`w-7 h-7 hover-icon block svg-style`}
                     />
                     <span
-                      className="transition-opacity opacity-100 fixed top-[92%] right-5 bg-[#302727] py-[4px] px-2 rounded-md border-white border-[1px] z-20"
+                      className="transition-opacity opacity-100 fixed top-[92%] right-5 bg-[#06070E] py-[4px] px-2 rounded-md border-white border-[1px] z-20"
                       style={{ opacity: hiddenPhone ? 0 : 1 }}
                     >
                       скопировано!

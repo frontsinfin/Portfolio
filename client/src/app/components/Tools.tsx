@@ -9,7 +9,7 @@ const Tools = () => {
       <div className="flex gap-x-4 gap-y-1 md:gap-x-6 md:gap-y-2 flex-wrap justify-center md:justify-start">
         {tools.map((tool) => (
           <div key={tool.name} className="flex gap-1 md:gap-2 items-center">
-            <span className="text-red-400 text-xl md:text-2xl font-bold ">
+            <span className="text-[#0085FF] text-xl md:text-2xl font-bold ">
               {tool.name}
             </span>
             <Image
